@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <div class="cover-image bg-cover bg-center flex flex-col h-[350px] md:h-[450px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] max-w-full" >
+    <div
+        class="cover-image bg-cover bg-center flex flex-col h-[350px] md:h-[450px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] max-w-full">
         <!-- Cover image section -->
         <nav class="w-full p-4 bg-[#BC512F] bg-opacity-20">
             <!-- Navigation bar -->
@@ -41,10 +42,11 @@
                                     </feMerge>
                                 </filter>
                             </defs>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4 6h16M4 12h16m-7 6h7" stroke="#BC512F" filter="url(#shadow)" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                d="M4 6h16M4 12h16m-7 6h7" stroke="#BC512F" filter="url(#shadow)" />
                             <!-- Hamburger icon -->
                         </svg>
-                        
+
 
                     </button>
                 </div>
@@ -52,15 +54,15 @@
                 <div id="menu" class="hidden md:flex space-x-2 font-bold"> <!-- Desktop navigation links -->
                     <a href="#"
                         class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32">
-                        Home
+                        about
                     </a>
                     <a href="#"
                         class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32">
-                        Story
+                        contract
                     </a>
                     <a href="#"
                         class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32">
-                        Tokenomics
+                        contract
                     </a>
                 </div>
 
@@ -84,11 +86,11 @@
                 <!-- Mobile navigation links -->
                 <div class="flex flex-col space-y-2 w-full opacity-75">
                     <a href="#"
-                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg hover:bg-amber-900 transition">Home</a>
+                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg hover:bg-amber-900 transition">about</a>
                     <a href="#"
-                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition">Story</a>
+                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition">contract</a>
                     <a href="#"
-                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition">Tokenomics</a>
+                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition">contract</a>
                 </div>
 
                 <!-- Separator -->
@@ -104,10 +106,33 @@
                     </a>
                 </div>
             </div>
-
-
         </nav>
     </div>
+    <div class="bg-white relative">
+        <!-- Cover Image Section -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/about_bg.png');">
+            <!-- Optional overlay if you want to darken or lighten the background -->
+            <div class="bg-black opacity-30 absolute inset-0"></div>
+        </div>
+    
+        <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Left Column: Image -->
+                <div class="flex justify-center items-center">
+                    <img src="/img/aboutgirl.png" alt="Description of Image"
+                        class="object-cover rounded-lg w-1/3 sm:w-1/4 md:w-1/5 lg:w-full" />
+                </div>
+                <!-- Right Column: Description -->
+                <div class="flex flex-col justify-center">
+                    <img src="/img/about_des.png" alt="Description of Image" class="object-cover rounded-lg w-full" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
 
     <script src="/script.js"></script>
     <!-- Link to JavaScript file -->
