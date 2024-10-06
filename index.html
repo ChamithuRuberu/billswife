@@ -1,126 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mojo Navbar</title>
     <link rel="icon" href="/img/about.png" type="image/x-icon" />
     <link rel="stylesheet" href="/main.css" />
-    <!-- Importing external CSS file -->
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="w-full bg-black p-4">
-      <div class="container mx-auto flex justify-between items-center">
-        <!-- Logo -->
-        <div class="flex items-center space-x-4">
-          <img src="/img/logo.png" alt="Mojo Logo" class="h-12" />
-          <span class="text-white font-bold text-2xl"></span>
-        </div>
+    <!-- Importing Tailwind CSS -->
+</head>
 
-        <!-- Hamburger Icon (hidden on desktop) -->
-        <div class="md:hidden">
-          <button id="hamburger" class="text-white focus:outline-none">
-            <!-- Hamburger Icon -->
-            <svg
-              class="w-8 h-8"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
-        </div>
+<body>
+    <div class="cover-image bg-cover bg-center flex flex-col h-[350px] md:h-[450px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] max-w-full" >
+        <!-- Cover image section -->
+        <nav class="w-full p-4 bg-[#BC512F] bg-opacity-20">
+            <!-- Navigation bar -->
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Container for navbar content -->
+                <div class="flex items-center space-x-4">
+                    <!-- Logo and title section -->
+                    <img src="/img/logo.png" alt="Mojo Logo" class="h-12 hover:scale-110 transition duration-750" />
+                    <!-- Logo image -->
+                    <span class="text-white font-bold text-2xl"></span>
+                    <!-- Placeholder for title -->
+                </div>
 
-        <!-- Links (hidden on mobile, shown on desktop) -->
-        <div id="menu" class="hidden md:flex space-x-4 font-bold">
-          <a
-            href="#"
-            class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition"
-            >Story</a
-          >
-          <a
-            href="#"
-            class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition"
-            >Tokenomics</a
-          >
-        </div>
+                <div class="md:hidden">
+                    <!-- Hamburger menu button for mobile view -->
+                    <button id="hamburger" class="text-white focus:outline-none">
+                        <!-- Button to toggle mobile menu -->
+                        <svg class="w-16 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <defs>
+                                <filter id="shadow" x="-20%" y="-20%" width="200%" height="200%">
+                                    <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+                                    <feOffset dy="2" dx="0" result="offsetblur" />
+                                    <feMerge>
+                                        <feMergeNode />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4 6h16M4 12h16m-7 6h7" stroke="#BC512F" filter="url(#shadow)" />
+                            <!-- Hamburger icon -->
+                        </svg>
+                        
 
-        <!-- Social Icons (hidden on mobile, shown on desktop) -->
-        <div class="hidden md:flex space-x-2">
-          <a
-            href="#"
-            class="p-2 bg-black rounded-lg hover:bg-gray-700 transition"
-          >
-            <img src="/img/tg (1).png" alt="Telegram" class="h-6 w-6" />
-          </a>
-          <a
-            href="#"
-            class="p-2 bg-black rounded-lg hover:bg-gray-700 transition"
-          >
-            <img src="/img/x (1).png" alt="X" class="h-6 w-6" />
-          </a>
-        </div>
-      </div>
+                    </button>
+                </div>
 
-      <!-- Mobile Menu (hidden by default, shown only on mobile) -->
-      <div
-        id="mobileMenu"
-        class="md:hidden hidden flex flex-col items-end space-y-2 font-bold"
-      >
-        <a
-          href="#"
-          class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition w-full text-right"
-          >Home</a
-        >
-        <a
-          href="#"
-          class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition w-full text-right"
-          >Story</a
-        >
-        <a
-          href="#"
-          class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition w-full text-right"
-          >Tokenomics</a
-        >
+                <div id="menu" class="hidden md:flex space-x-2 font-bold"> <!-- Desktop navigation links -->
+                    <a href="#"
+                        class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32">
+                        Home
+                    </a>
+                    <a href="#"
+                        class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32">
+                        Story
+                    </a>
+                    <a href="#"
+                        class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32">
+                        Tokenomics
+                    </a>
+                </div>
 
-        <!-- Social Icons for mobile -->
-        <div class="flex space-x-2 justify-end">
-          <a
-            href="#"
-            class="p-2 bg-black rounded-lg hover:bg-gray-700 transition"
-          >
-            <img src="/img/tg (1).png" alt="Telegram" class="h-6 w-6" />
-          </a>
-          <a
-            href="#"
-            class="p-2 bg-black rounded-lg hover:bg-gray-700 transition"
-          >
-            <img src="/img/x (1).png" alt="X" class="h-6 w-6" />
-          </a>
-        </div>
-      </div>
-    </nav>
+                <div class="hidden md:flex space-x-2">
+                    <!-- Social media icons for desktop view -->
+                    <a href="#" class="pl-0 rounded-lg transition duration-300 flex items-center justify-center">
+                        <img src="/img/tg (1).png" alt="Telegram"
+                            class="transition-transform duration-300 hover:scale-105 w-14" />
+                        <!-- Telegram icon -->
+                    </a>
+                    <a href="#" class="pl-0 rounded-lg transition duration-300 flex items-center justify-center ">
+                        <img src="/img/x (1).png" alt="X"
+                            class="transition-transform duration-300 hover:scale-105 w-14" />
+                        <!-- X icon -->
+                    </a>
+                </div>
+            </div>
+
+            <div id="mobileMenu"
+                class="md:hidden hidden flex-col items-end space-y-4 font-bold bg-black bg-opacity-60 p-2 rounded-lg">
+                <!-- Mobile navigation links -->
+                <div class="flex flex-col space-y-2 w-full opacity-75">
+                    <a href="#"
+                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg hover:bg-amber-900 transition">Home</a>
+                    <a href="#"
+                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition">Story</a>
+                    <a href="#"
+                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition">Tokenomics</a>
+                </div>
+
+                <!-- Separator -->
+                <div class="border-t border-gray-600 w-full my-2"></div>
+
+                <!-- Social media icons for mobile view -->
+                <div class="flex space-x-0 justify-end w-full">
+                    <a href="#" class="p-2 rounded-lg flex items-center justify-center">
+                        <img src="/img/tg (1).png" alt="Telegram" class="h-12 w-12" />
+                    </a>
+                    <a href="#" class="p-2 rounded-lg flex items-center justify-center">
+                        <img src="/img/x (1).png" alt="X" class="h-12 w-12" />
+                    </a>
+                </div>
+            </div>
+
+
+        </nav>
+    </div>
 
     <script src="/script.js"></script>
-    <!-- Adjust the path as per your file structure -->
-    <!-- Cover Photo Section -->
-    <div class="cover-image min-h-[300px] md:min-h-[400px] bg-cover bg-center flex items-center justify-center">
-    </div>
-    
-    </div>
-  </body>
+    <!-- Link to JavaScript file -->
+</body>
+
 </html>

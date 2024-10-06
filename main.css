@@ -1,5 +1,13 @@
 .cover-image {
-    background-image: url('/img/covaer.png');
-    background-size: cover; /* Ensure the image covers the entire div */
-    background-position: center;/* Replace with your image path */
+    background-image: url('/img/cover.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent repeating */
+    /* Ensure the image covers the entire div */
+}
+
+@media (max-width: 640px) {
+    .cover-image {
+        height: 350px; /* Height for mobile screens */
+
+    }
 }
