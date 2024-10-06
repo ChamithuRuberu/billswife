@@ -11,35 +11,59 @@
     <!-- Navbar -->
     <nav class="w-full bg-black p-4">
         <div class="container mx-auto flex justify-between items-center">
-
+    
             <!-- Logo -->
             <div class="flex items-center space-x-4">
                 <img src="/img/logo.png" alt="Mojo Logo" class="h-12">
                 <span class="text-white font-bold text-2xl"></span>
             </div>
-
-            <!-- Links -->
-            <div class="hidden md:flex space-x-4">
+    
+            <!-- Hamburger Icon (hidden on desktop) -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-white focus:outline-none">
+                    <!-- Hamburger Icon -->
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Links (hidden on mobile, shown on desktop) -->
+            <div id="menu" class="hidden md:flex space-x-4 font-bold">
                 <a href="#" class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition">Home</a>
                 <a href="#" class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition">Story</a>
-                <a href="#" class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition">How to Buy</a>
                 <a href="#" class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition">Tokenomics</a>
+            
             </div>
-
+    
             <!-- Social Icons -->
             <div class="flex space-x-2">
                 <a href="#" class="p-2 bg-black rounded-lg hover:bg-gray-700 transition">
-                    <img src="x-icon-url.png" alt="X" class="h-6 w-6">
+                    <img src="/img/tg (1).png" alt="Telegram" class="h-6 w-6">
                 </a>
                 <a href="#" class="p-2 bg-black rounded-lg hover:bg-gray-700 transition">
-                    <img src="telegram-icon-url.png" alt="Telegram" class="h-6 w-6">
+                    <img src="/img/x (1).png" alt="X" class="h-6 w-6">
+                </a>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobileMenu" class="md:hidden hidden flex flex-col items-center space-y-2 font-bold">
+            <a href="#" class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition w-full text-center">Home</a>
+            <a href="#" class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition w-full text-center">Story</a>
+            <a href="#" class="text-white bg-black py-2 px-4 rounded-lg hover:bg-gray-700 transition w-full text-center">Tokenomics</a>
+            <div class="flex space-x-2">
+                <a href="#" class="p-2 bg-black rounded-lg hover:bg-gray-700 transition">
+                    <img src="/img/tg (1).png" alt="Telegram" class="h-6 w-6">
                 </a>
                 <a href="#" class="p-2 bg-black rounded-lg hover:bg-gray-700 transition">
-                    <img src="icon-url.png" alt="Other Icon" class="h-6 w-6">
+                    <img src="/img/x (1).png" alt="X" class="h-6 w-6">
                 </a>
             </div>
         </div>
     </nav>
+    
+    <script src="/script.js"></script> <!-- Adjust the path as per your file structure -->
 
 </body>
 </html>
