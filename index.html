@@ -21,7 +21,8 @@
                 <!-- Container for navbar content -->
                 <div class="flex items-center space-x-4">
                     <!-- Logo and title section -->
-                    <img src="/img/logo.png" alt="Mojo Logo" class="h-12 hover:scale-110 transition duration-750" />
+                    <img src="/img/logo.png" alt="Mojo Logo"
+                        class="h-12 md:h-14 lg:h-20 hover:scale-110 transition duration-750" />
                     <!-- Logo image -->
                     <span class="text-white font-bold text-2xl"></span>
                     <!-- Placeholder for title -->
@@ -46,22 +47,21 @@
                                 d="M4 6h16M4 12h16m-7 6h7" stroke="#BC512F" filter="url(#shadow)" />
                             <!-- Hamburger icon -->
                         </svg>
-
-
                     </button>
                 </div>
 
-                <div id="menu" class="hidden md:flex space-x-2 font-bold"> <!-- Desktop navigation links -->
-                    <a href="#"
-                        class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32">
+                <div id="menu" class="hidden md:flex space-x-2 font-bold">
+                    <!-- Desktop navigation links -->
+                    <a id="aboutLink"
+                        class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32 cursor-pointer">
                         About
                     </a>
-                    <a href="#"
-                        class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32">
+                    <a id="contractLink"
+                        class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32 cursor-pointer">
                         Contract
                     </a>
-                    <a href="#"
-                        class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32">
+                    <a id="buyLink"
+                        class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32 cursor-pointer">
                         Buy Now
                     </a>
                 </div>
@@ -85,14 +85,14 @@
                 class="md:hidden hidden flex-col items-end space-y-4 font-bold bg-black bg-opacity-60 p-2 rounded-lg">
                 <!-- Mobile navigation links -->
                 <div class="flex flex-col space-y-2 w-full opacity-75">
-                    <a href="#"
-                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg hover:bg-amber-900 transition">About</a>
-                    <a href="#"
-                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition">Contract</a>
-                    <a href="#" class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition">Buy
+                    <a id="aboutLinkMobile"
+                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg hover:bg-amber-900 transition cursor-pointer">About</a>
+                    <a id="contractLinkMobile"
+                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition cursor-pointer">Contract</a>
+                    <a id="buyLinkMobile"
+                        class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition cursor-pointer">Buy
                         Now</a>
                 </div>
-
                 <!-- Separator -->
                 <div class="border-t border-gray-600 w-full my-2"></div>
 
@@ -122,52 +122,92 @@
                 <div class="flex flex-col justify-center">
                     <img src="/img/about_des.png" alt="Description of Image"
                         class="object-cover rounded-lg w-full max-w-full h-auto" />
-                        <div class="flex flex-col items-start bg-opacity-50">
-                            <div class="max-w-md mx-auto p-4 border-dotted border-2 border-black rounded-lg shadow-md mt-4 w-full">
-                                <!-- Title -->
-                                <div class="bg-[#BC512F] text-white rounded-full px-4 py-2 text-left font-bold w-52">
-                                    Contract Address :-
-                                </div>
-                
-                                <!-- Contract Address -->
-                                <div class="mt-4 text-left font-mono text-lg w-full text-white">
-                                    0x0000
-                                </div>
-                
-                                <!-- Copy Button -->
-                                <div class="mt-4 flex justify-start w-32">
-                                    <button
-                                        class="flex items-center border rounded-md px-4 py-2 border-gray-300 bg-white text-amber-700 hover:bg-gray-100 focus:outline-none">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M8 11V5h8v6m-2 2h-8v6h8v-6zm-8-6a2 2 0 00-2 2v14a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2H8z" />
-                                        </svg>
-                                        Copy
-                                    </button>
-                                </div>
+                    <div class="flex flex-col items-start bg-opacity-50">
+                        <div
+                            class="max-w-md mx-auto p-4 border-dotted border-2 border-black rounded-lg shadow-md mt-4 w-full">
+                            <!-- Title -->
+                            <div class="bg-[#BC512F] text-white rounded-full px-4 py-2 text-left font-bold w-24">
+                                CA
+                            </div>
+
+                            <!-- Contract Address -->
+                            <div class="mt-4 text-left font-mono text-lg w-full text-black font-bold">
+                                0x0000
+                            </div>
+
+                            <!-- Copy Button -->
+                            <div class="mt-4 flex justify-start w-32">
+                                <button
+                                    class="flex items-center border rounded-md px-4 py-2 border-gray-300 bg-white text-amber-700 hover:bg-gray-100 focus:outline-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 11V5h8v6m-2 2h-8v6h8v-6zm-8-6a2 2 0 00-2 2v14a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2H8z" />
+                                    </svg>
+                                    Copy
+                                </button>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-            
-           
         </div>
     </div>
 
-    <footer class="bg-gray-800 text-white py-4 mt-0">
+    <footer id="bottom-section" class="bg-gray-800 text-white py-4 mt-0">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <p class="text-sm">
                 &copy; 2024 © ALL RIGHTS RESERVED CINETOON
             </p>
-
         </div>
     </footer>
 
+    <script>    
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
 
+        hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
 
-    <script src="/script.js"></script>
-    <!-- Link to JavaScript file -->
+// Function to close the mobile menu
+function closeMobileMenu() {
+    mobileMenu.classList.add('hidden'); // Hide the mobile menu
+}
+
+const mobileLinks = document.querySelectorAll('#mobileMenu a');
+
+mobileLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu); // Close menu on link click
+});
+
+        // Smooth scroll function
+        document.getElementById('aboutLink').addEventListener('click', function () {
+            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('contractLink').addEventListener('click', function () {
+            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('buyLink').addEventListener('click', function () {
+            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Repeat for mobile menu links
+        document.getElementById('aboutLinkMobile').addEventListener('click', function () {
+            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('contractLinkMobile').addEventListener('click', function () {
+            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('buyLinkMobile').addEventListener('click', function () {
+            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+    </script>
 </body>
 
 </html>
