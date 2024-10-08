@@ -60,7 +60,7 @@
                         class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32 cursor-pointer">
                         Contract
                     </a>
-                    <a id="buyLink" href="https://app.uniswap.org/swap?outputCurrency=0x690006b803355f08AEB0FB2386D5572aDBFE4715&chain=ethereum"
+                    <a id="buyLink" href="https://app.uniswap.org/swap?outputCurrency=0x690006b803355f08AEB0FB2386D5572aDBFE4715&chain=ethereum" target="_blank"
                         class="text-white bg-[#BC512F] py-3 px-5 rounded-lg transition duration-300 transform shadow-inner hover:shadow-lg hover:scale-105 flex items-center justify-center h-12 w-32 cursor-pointer">
                         Buy Now
                     </a>
@@ -89,7 +89,7 @@
                         class="text-white bg-[#BC512F] py-3 px-4 rounded-lg hover:bg-amber-900 transition cursor-pointer">About</a>
                     <a id="contractLinkMobile"
                         class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition cursor-pointer">Contract</a>
-                    <a id="buyLinkMobile" href="https://app.uniswap.org/swap?outputCurrency=0x690006b803355f08AEB0FB2386D5572aDBFE4715&chain=ethereum"
+                    <a id="buyLinkMobile" href="https://app.uniswap.org/swap?outputCurrency=0x690006b803355f08AEB0FB2386D5572aDBFE4715&chain=ethereum" target="_blank"
                         class="text-white bg-[#BC512F] py-3 px-4 rounded-lg  hover:bg-amber-900 transition cursor-pointer">Buy
                         Now</a>
                 </div>
@@ -201,10 +201,6 @@
             document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
         });
 
-        document.getElementById('buyLink').addEventListener('click', function () {
-            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
-        });
-
         // Repeat for mobile menu links
         document.getElementById('aboutLinkMobile').addEventListener('click', function () {
             document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
@@ -214,9 +210,7 @@
             document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
         });
 
-        document.getElementById('buyLinkMobile').addEventListener('click', function () {
-            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
-        });
+       
 
         document.getElementById('copyButton').addEventListener('click', function () {
             // Get the contract address text
