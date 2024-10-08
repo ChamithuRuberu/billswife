@@ -18,3 +18,4 @@
 //     document.getElementById('buyLink').addEventListener('click', function () {
 //         document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
 //     });
+
