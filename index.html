@@ -68,12 +68,12 @@
 
                 <div class="hidden md:flex space-x-2">
                     <!-- Social media icons for desktop view -->
-                    <a href="#" class="pl-0 rounded-lg transition duration-300 flex items-center justify-center">
+                    <a href="https://t.me/billswifeeth" target="_blank" class="pl-0 rounded-lg transition duration-300 flex items-center justify-center">
                         <img src="/img/tg (1).png" alt="Telegram"
                             class="transition-transform duration-300 hover:scale-105 w-14" />
                         <!-- Telegram icon -->
                     </a>
-                    <a href="#" class="pl-0 rounded-lg transition duration-300 flex items-center justify-center ">
+                    <a href="https://x.com/billwifeeth" target="_blank" class="pl-0 rounded-lg transition duration-300 flex items-center justify-center ">
                         <img src="/img/x (1).png" alt="X"
                             class="transition-transform duration-300 hover:scale-105 w-14" />
                         <!-- X icon -->
@@ -97,11 +97,11 @@
                 <div class="border-t border-gray-600 w-full my-2"></div>
 
                 <!-- Social media icons for mobile view -->
-                <div class="flex space-x-0 justify-end w-full">
-                    <a href="#" class="p-2 rounded-lg flex items-center justify-center">
+                <div class="flex space-x-0 justify-end w-full ">
+                    <a href="https://t.me/billswifeeth" target="_blank" class="p-2 rounded-lg flex items-center justify-center">
                         <img src="/img/tg (1).png" alt="Telegram" class="h-12 w-12" />
                     </a>
-                    <a href="#" class="p-2 rounded-lg flex items-center justify-center">
+                    <a href="https://x.com/billwifeeth" target="_blank" class="p-2 rounded-lg flex items-center justify-center">
                         <img src="/img/x (1).png" alt="X" class="h-12 w-12" />
                     </a>
                 </div>
@@ -119,7 +119,7 @@
                         class="object-cover rounded-lg h-[320px]  md:h-[475px] object-cover " />
                 </div>
                 <!-- Right Column: Description -->
-                <div class="flex flex-col justify-center">
+                <div id="about" class="flex flex-col justify-center">
                     <img src="/img/about_des.png" alt="Description of Image"
                         class="object-cover rounded-lg w-full max-w-full h-auto" />
                     <div class="flex flex-col items-start">
@@ -194,7 +194,7 @@
 
         // Smooth scroll function
         document.getElementById('aboutLink').addEventListener('click', function () {
-            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
         });
 
         document.getElementById('contractLink').addEventListener('click', function () {
@@ -207,7 +207,7 @@
 
         // Repeat for mobile menu links
         document.getElementById('aboutLinkMobile').addEventListener('click', function () {
-            document.getElementById('bottom-section').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
         });
 
         document.getElementById('contractLinkMobile').addEventListener('click', function () {
