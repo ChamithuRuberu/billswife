@@ -110,60 +110,60 @@
     </div>
 
     <div class="bg-[#181a1b] p-8 flex justify-center bg-cover bg-center"
-        style="background-image: url('/img/footer.png');display: flex;">
-        <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Left Column: Image -->
-                <div class="flex justify-center items-center">
-                    <img src="/img/aboutgirl.png" alt="Description of Image"
-                        class="object-cover rounded-lg h-[320px]  md:h-[475px] object-cover " />
-                </div>
-                <!-- Right Column: Description -->
-                <div id="about" class="flex flex-col justify-center">
-                    <img src="/img/about_des.png" alt="Description of Image"
-                        class="object-cover rounded-lg w-full max-w-full h-auto" />
-                    <div class="flex flex-col items-start">
-                        <div class="max-w-md mx-auto p-6 border-dotted border-2 rounded-lg shadow-lg mt-4 w-full"
-                            style="background-color: rgba(255, 255, 255, 0.8);">
-                            <!-- Title -->
-                            <div
-                                class="bg-[#BC512F] text-white rounded-full px-6 py-2 text-left font-bold w-fit text-sm md:text-base lg:text-lg shadow-md">
-                                CA
+    style="background-image: url('/img/footer.png');">
+    <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Left Column: Image -->
+            <div class="flex justify-center items-center">
+                <img src="/img/aboutgirl.png" alt="Description of Image"
+                    class="object-cover rounded-lg h-[320px] md:h-[475px] object-cover" />
+            </div>
+
+            <!-- Right Column: Description -->
+            <div id="about" class="flex flex-col justify-center">
+                <img src="/img/about_des.png" alt="Description of Image"
+                    class="object-cover rounded-lg w-full max-w-full h-auto" />
+
+                <div class="flex flex-col items-start">
+                    <div class="max-w-md mx-auto p-6 border-dotted border-2 rounded-lg shadow-lg mt-4 w-full"
+                        style="background-color: rgba(255, 255, 255, 0.8);">
+                        <!-- Title -->
+                        <div
+                            class="bg-[#BC512F] text-white rounded-full px-6 py-2 text-left font-bold w-fit text-sm md:text-base lg:text-lg shadow-md">
+                            CA
+                        </div>
+
+                        <!-- The contract address -->
+                        <div id="contractAddress"
+                            class="mt-4 text-left font-mono text-xs md:text-sm lg:text-sm w-full text-gray-900 font-bold tracking-wide break-words">
+                            0x690006b803355f08AEB0FB2386D5572aDBFE4715
+                        </div>
+
+                        <!-- Copy Button -->
+                        <div class="mt-4 flex justify-start w-fit">
+                            <button id="copyButton"
+                                class="flex items-center border rounded-lg px-4 py-2 border-gray-300 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-medium shadow-sm focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 11V5h8v6m-2 2h-8v6h8v-6zm-8-6a2 2 0 00-2 2v14a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2H8z" />
+                                </svg>
+                                Copy
+                            </button>
+
+                            <!-- Pop-up message -->
+                            <div id="copyMessage"
+                                class="hidden mt-2 px-4 py-2 rounded-lg bg-green-100 text-green-700 font-semibold text-sm shadow-lg transition-transform duration-500 transform translate-y-1">
+                                CA copied successfully!
                             </div>
-
-
-                            <!-- The contract address (hidden for copying) -->
-                            <div id="contractAddress"
-                                class="mt-4 text-left font-mono text-lg w-full text-gray-900 font-bold tracking-wide">
-                                0x690006b803355f08AEB0FB2386D5572aDBFE4715
-                            </div>
-                            <div class="mt-4 flex justify-start w-fit">
-                                <button id="copyButton"
-                                    class="flex items-center border rounded-lg px-4 py-2 border-gray-300 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-medium hover:scale-105 transition transform duration-300 shadow-sm focus:outline-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M8 11V5h8v6m-2 2h-8v6h8v-6zm-8-6a2 2 0 00-2 2v14a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2H8z" />
-                                    </svg>
-                                    Copy
-                                </button>
-
-                                <!-- Pop-up message -->
-                                <div id="copyMessage"
-                                    class="hidden mt-2 px-4 py-2 rounded-lg bg-green-100 text-green-700 font-semibold text-sm shadow-lg transition-transform duration-500 transform translate-y- 1">
-                                    CA copied successfully!
-                                </div>
-                            </div>
-
-
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 
     <footer id="bottom-section" class="bg-gray-800 text-white py-4 mt-0">
         <div class="max-w-7xl mx-auto px-4 text-center">
